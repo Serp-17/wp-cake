@@ -1,0 +1,35 @@
+.ballon-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    position: fixed;
+    bottom: 4em;
+    right: 2em;
+    z-index: 20;
+}
+.ballon-popup img {
+    max-width: 80px;
+}
+.ballon-popup a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+.ballon-popup a:hover {
+    text-decoration: underline;
+}
+@media (max-width:767px) {
+    .ballon-popup img {
+        max-width: 50px;
+    }
+    .ballon-popup {
+        bottom: 7em;
+        right: 1.5em;
+    }
+}
